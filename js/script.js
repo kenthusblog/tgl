@@ -10,9 +10,7 @@ new Vue({
         bulans: 0
     },
     methods: {
-        sub: function(){
-            tggl = this.tanggalValue
-            
+        sub: function()            
             switch (tggl) {
                 case 1:
                 return this.sifat = `Pada umumnya manusia ini bersifat pendiam & konservatif. Namun dengan orang-orang tertentu dia cepat mesra. 
