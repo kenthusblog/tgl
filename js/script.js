@@ -2,11 +2,9 @@ new Vue({
     el: '#apps',
     data: {
         tanggal : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
-        bulan: ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'],
         nama: '',
         waktus: '',
         tanggalValue: '',
-        bulanValue: '',
         sifat: '',
         watak: '',
         bulans: 0
@@ -161,14 +159,14 @@ new Vue({
             }
 
             switch (tggl) {
-                case 1: case 9: case 24:
+                case 1:
                 return this.sifat = `Pada umumnya manusia ini bersifat pendiam & konservatif. Namun dengan orang-orang tertentu dia cepat mesra. 
                 Tapi manusia yang lahir tanggal `+ tggl +` mudah tersinggung. Karena sifatnya itu menyebabkan banyak orang yang tidak menyukainya. Namun begitu dia tetap dikagumi karena bersikap serius terutama yang berhubungan dengan orang ramai. Dalam hal percintaan, dia sanggup berbuat apa saja semata-mata untuk memenuhi segala keinginan manusianya. Tapi hati-hati kadangkala dia lebih mementingkan persahabatan daripada percintaan dan lebih rela memutuskan cintanya demi sebuah persahabatan yang telah terjalin lama.` 
                     break;
-                case 2: case 11: case 30:
+                case 2:
                 return this.sifat = `Orangnya perasa dan mudah tersinggung. Sifatnya yang suka menyendiri membuatkan dia lebih suka tinggal di rumah. Banyak orang suka bergaul denganya karena perwatakannya yang lembut &ramah.Dia paling benci jika cintanya ditolak atau dikhianati oleh orang yang benar-benar dicintainya. Namun begitu dia selalu bersikap sabar dan tidak terburu-buru dalam bertindak. Sayangnya untuk urusan masa depan dia bersikap pesimis sering mengalah sebelum mencuba. Oleh itu mesti ada yang mendorongnya agar tidak terus terjebak dengan sikap pesimisnya.` 
                     break;
-                case 3: case 18: case 29:
+                case 3: 
                 return this.sifat = `Sabar serta pandai menguasai diri adalah ciri yang khas bagi manusia yang lahir pada tanggal ` + tggl + ` . Tapi jangan cuba mempermain-mainkannya, dia akan mengamuk dengan hebat. Dia tergolong manusia yang bijaksana dan bertanggungjawab. Sifat jujur & ramah adalah modal utamanya dalam bergaul. Tapi dalam soal cinta dia merupakan manusia yang susah untuk dimengertikan.` 
                     break;
                 case 4: case 13:
