@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/smile-4998846_960_720.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Karakter Manusia by raldi</title>
+</head>
+<body background-color="Light Cyan">
+    <div id="apps">
+        
+        <div class="container shadow p-3 mt-5 mb-5 bg-body rounded">
+                <h4 class="mb-3"><b>Karakter Manusia By Raldi<i class="bi bi-emoji-laughing"></i></b> </h4>
+            <div class="input-group flex-nowrap mb-3">
+                <input v-model="nama" type="text" class="form-control" placeholder="kasih masuk ko nama mu" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group mb-3">
+                <select class="form-select" v-model="tanggalValue">
+                    <option disabled selected>-- Tanggal Lahir mu --</option>
+                    <option v-for="tg in tanggal" :value="tg">{{ tg }}</option>
+                </select>
+            </div>
+            <template v-if="bulans === 1">
+                <div class="input-group mb-3">
+                    <select class="form-select" v-model="bulanValue">
+                        <option disabled selected>-- Bulan Lahir mu --</option>
+                        <option v-for="bln in bulan" :value="bln">{{ bln }}</option>
+                    </select>
+                </div>
+            </template>
+
+            <button type="submit" @click="sub"  class="btn btn-primary">Pencet</button>
+            <button type="submit" @click="reload"  class="btn btn-danger">Ulang</button>
+            <div class="text-center mt-3">
+                <template v-if="nama.length > 0">
+                    <h4> {{waktu}}, {{ nama }} </h4>
+                </template> 
+                <template v-else></template> 
+            </div>
+            <template v-if="sifat.length > 0 && watak.length > 0">
+                <div class="mt-4">
+                    <h4>ini mi sifatmu, baca mi </h4>
+                    <p>" {{ sifat }} "</p>
+                </div>
+                <hr>
+                <div class="mt-4">
+                    <h4>ini mi watakmu, liat sendiri mi </h4>
+                    <p>" {{ watak }} "</p>
+                </div>
+            </template>
+            <template v-else></template>
+        </div>
+    </div>
+</body>
+<footer class="text-center">
+	
+    <p class="btn">Contact Me via facebook: <a href="https://www.facebook.com/raldi.programmer" target="black">klik di sini untuk terhubung dengan saya di facebook</a></p></br>
+	<p class="btn">Contact Me via instagram: <a href="http://www.instagram.com/raldi_setiawan" target="black">klik di sini untuk terhubung dengan saya di instagram</a></p></br>
+	<p class="btn">Contact Me via whatsapp: <a href=" https://api.whatsapp.com/send?phone=+6285399791346&text=hay...%20admin%20saya%20(ganti%20nama%20kamu)" target="black">klik di sini untuk terhubung dengan saya di whatsapp</a></p>
+	
+</footer>
+<script src="js/Vue.js"></script>
+<script src="js/script.js"></script>
+</html>
